@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breanna Camacho</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: url('./images/pink.png') no-repeat center center/cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./images/breanna.jpg" alt="Breanna Camacho">
+            <h1>Breanna Camacho</h1>
+            <p>Software Developer | Designer | Creator</p>
+        </div>
+    </header>    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Breanna Camacho, a dedicated software developer to-be! Currently enrolled in a coding bootcamp, I'm passionate about mastering the craft of software development. My journey began with a fascination for technology and a desire to create meaningful solutions through code.</p>
+            <p>Proficient in languages like HTML, CSS, C#, PHP, Python, and JavaScript, I'm exploring modern frameworks and tools to expand my skill set. I enjoy tackling challenges and building practical, user-centered applications that solve real-world problems.</p>
+            <p>Driven by a relentless curiosity and a love for learning, I embrace each project as an opportunity to grow. I thrive in collaborative environments that foster creativity and innovation, where I can contribute fresh ideas and perspectives.</p>
+            <p>My goal is to leverage my evolving technical skills and enthusiasm for software development to make a positive impact.
+        </section>
+        <section id="work" class="work">
+            <h2>My Work</h2>
+            <div class="projects">
+                <article class="project">
+                    <a href="#">
+                        <figure class="project-preview">
+                            <img src="./images/1.png" alt="Project 1">
+                            <figcaption>Code Refractor</figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <article class="project">
+                    <a href="#">
+                        <figure class="project-preview">
+                            <img src="./images/2.png" alt="Project 2">
+                            <figcaption>Project 2</figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <article class="project">
+                    <a href="#">
+                        <figure class="project-preview">
+                            <img src="./images/2.png" alt="Project 3">
+                            <figcaption>Project 3</figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <article class="project">
+                    <a href="#">
+                        <figure class="project-preview">
+                            <img src="./images/2.png" alt="Project 4">
+                            <figcaption>Project 4</figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <article class="project">
+                    <a href="#">
+                        <figure class="project-preview">
+                            <img src="./images/2.png" alt="Project 5">
+                            <figcaption>Project 5</figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <article class="project">
+                    <a href="#">
+                        <figure class="project-preview">
+                            <img src="./images/2.png" alt="Project 6">
+                            <figcaption>Project 6</figcaption>
+                        </figure>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:breannacamacho1@gmail.com">breannacamacho1@gmail.com</a></p>
+            <p>LinkedIn: <a href="your-linkedin-profile">LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/breannacamacho">github.com/breannacamacho</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Breanna Camacho. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
